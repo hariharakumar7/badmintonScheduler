@@ -1,21 +1,25 @@
 import React from "react";
 import "./App.css";
 import { Button } from "./Button";
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Login from "./pages/Login";
+import Home from "./pages/Home";
 function App() {
-  const [data, setData] = React.useState(null);
-  const clickButton = () => {
-    fetch("/api")
-      .then((res) => res.json())
-      .then((data) => setData(data.message));
-  };
-
+  // const clickButton = () => {
+  //   fetch("/api")
+  //     .then((res) => res.json())
+  //     .then((data) => setData(data.message));
+  // };
   return (
     <div className="App">
-      <header className="App-header">
-        <p>{!data ? "Loading..." : data}</p>
-        <Button onClick={clickButton}>Click here!!</Button>
-      </header>
+      {/* <Button onClick={() => history.push("/LoginForm")}>Click button</Button> */}
+      {/* <Button onClick={navigate("/login")}>Login</Button> */}
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
