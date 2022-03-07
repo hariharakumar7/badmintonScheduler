@@ -4,6 +4,7 @@ import { Button } from "./Button";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./pages/Login";
 import Home from "./pages/Home";
+import Schedule from "./pages/Schedule";
 function App() {
   // const clickButton = () => {
   //   fetch("/api")
@@ -18,6 +19,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/schedule" element={<Schedule />} />
         </Routes>
       </Router>
     </div>
