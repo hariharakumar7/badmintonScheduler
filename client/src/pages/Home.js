@@ -13,12 +13,15 @@ export default function Home() {
   useEffect(() => {
     let authToken = sessionStorage.getItem("Auth Token");
     if (authToken) {
+      // eslint-disable-next-line react-hooks/exhaustive-deps
       navigate("/home");
     }
 
     if (!authToken) {
+      // eslint-disable-next-line react-hooks/exhaustive-deps
       navigate("/login");
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
     <div>

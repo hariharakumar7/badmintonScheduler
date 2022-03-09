@@ -1,15 +1,9 @@
 import React from "react";
 import "./App.css";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  useNavigate,
-} from "react-router-dom";
+import { Routes, Route, useNavigate } from "react-router-dom";
 import Home from "./pages/Home";
 import Schedule from "./pages/Schedule";
 import Form from "./components/common/Form";
-import { app } from "./utils/firebase";
 import {
   getAuth,
   signInWithEmailAndPassword,
@@ -28,14 +22,14 @@ function App() {
   const navigate = useNavigate();
   const authentication = getAuth();
 
-  const sendPasswordReset = async (email) => {
-    try {
-      await sendPasswordResetEmail(authentication, email);
-      toast.info("Password reset link sent!");
-    } catch (err) {
-      console.error(err);
-    }
-  };
+  // const sendPasswordReset = async (email) => {
+  //   try {
+  //     await sendPasswordResetEmail(authentication, email);
+  //     toast.info("Password reset link sent!");
+  //   } catch (err) {
+  //     console.error(err);
+  //   }
+  // };
 
   const handleAction = (id) => {
     if (id === 1) {
@@ -81,7 +75,7 @@ function App() {
         <Route
           path="/login"
           element={
-            <Form
+            <Login
               title="Login"
               setEmail={setEmail}
               setPassword={setPassword}

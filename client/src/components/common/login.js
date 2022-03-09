@@ -15,7 +15,11 @@ export default function Login({
   return (
     <div class="login">
       <h1>
-        <img style={{ height: 100, width: 100 }} src={logo}></img>
+        <img
+          style={{ height: 100, width: 100 }}
+          alt="badminton"
+          src={logo}
+        ></img>
       </h1>
 
       <Box
