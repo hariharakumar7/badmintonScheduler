@@ -1,20 +1,34 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { Button } from "../Button";
-function Home() {
-  const navigate = useNavigate();
+import Button from "../components/common/Button";
+
+export default function Home() {
+  let navigate = useNavigate();
+
+  const handleLogout = () => {
+    sessionStorage.removeItem("Auth Token");
+    navigate("/login");
+  };
+
+  useEffect(() => {
+    let authToken = sessionStorage.getItem("Auth Token");
+    if (authToken) {
+      navigate("/home");
+    }
+
+    if (!authToken) {
+      navigate("/login");
+    }
+  }, []);
   return (
     <div>
-      <p>Home page -- Hello world!</p>
-      <Button
-        onClick={() => {
-          navigate("/login");
-        }}
-      >
-        Login
-      </Button>
+      <br />
+      <br />
+      Home Page
+      <br />
+      <br />
+      <br />
+      <Button handleAction={handleLogout} title={"Log out"} />
     </div>
   );
 }
-
-export default Home;
