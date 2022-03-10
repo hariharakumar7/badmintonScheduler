@@ -34,9 +34,9 @@ const Card = (props) => {
   );
 };
 
-const dateComponent = (props) => {
-  const dates = availableDates();
-};
+// const dateComponent = (props) => {
+//   const dates = availableDates();
+// };
 
 const availableDates = (props) => {
   const months = [
@@ -70,7 +70,7 @@ const availableDates = (props) => {
   const currentDate = new Date();
   while (printDays.length < 3) {
     currentDay = currentDay % 7;
-    if (badmintonDays.indexOf(currentDay) != -1) {
+    if (badmintonDays.indexOf(currentDay) !== -1) {
       printDays.push(days[currentDay]);
       const dateVal = currentDate.getDate().toString();
       const monthVal = months[currentDate.getMonth()];
