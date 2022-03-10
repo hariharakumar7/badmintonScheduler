@@ -22,7 +22,7 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-getAnalytics(app);
+const analytics = getAnalytics(app);
 
 // firebase.initializeApp(firebaseConfig);
 // export const db = firebase.firestore();
