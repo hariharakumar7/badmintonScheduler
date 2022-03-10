@@ -81,7 +81,7 @@ function App() {
         <Route
           path="/login"
           element={
-            <Form
+            <Login
               title="Login"
               setEmail={setEmail}
               setPassword={setPassword}
