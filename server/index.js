@@ -3,10 +3,12 @@ const path = require("path");
 const createTable = require("./database/createTable");
 const PORT = process.env.PORT || 3001;
 const app = express();
+const addEmail = require("./database/addEmail");
 
 app.use(express.static(path.resolve(__dirname, "../client/build")));
 
-app.get("/api", (req, res) => {
+app.get("/addEmail", (req, res) => {
+  addEmail.addEmail(req.body.email);
   res.json({ message: "hello world!" });
 });
 
@@ -19,3 +21,4 @@ app.listen(PORT, () => {
 });
 
 createTable.createTable();
+// addEmail.addEmail("temp1@gmail.com");

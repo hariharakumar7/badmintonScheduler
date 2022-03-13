@@ -30,8 +30,15 @@ function App() {
   //     console.error(err);
   //   }
   // };
-  const temp = () => {
-    fetch("/api")
+  const requestOptions = {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ title: "React POST Request Example" }),
+  };
+
+  const addEmail = (email) => {
+    requestOptions.body = JSON.stringify({ email: email });
+    fetch("/addEmail", requestOptions)
       .then((response) => response.json())
       .then((data) => console.log(data));
   };
@@ -63,7 +70,7 @@ function App() {
             "Auth Token",
             response._tokenResponse.refreshToken
           );
-          console.log("temp value is " + temp());
+          addEmail(response.user.email);
           sessionStorage.setItem("User Email", response.user.email);
         })
         .catch((error) => {
