@@ -7,7 +7,7 @@ const addEmail = require("./database/addEmail");
 
 app.use(express.static(path.resolve(__dirname, "../client/build")));
 
-app.get("/addEmail", (req, res) => {
+app.get("/addemail", (req, res) => {
   addEmail.addEmail(req.body.email);
   res.json({ message: "hello world!" });
 });
