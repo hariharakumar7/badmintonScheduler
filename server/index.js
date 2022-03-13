@@ -1,6 +1,6 @@
 const express = require("express");
 const path = require("path");
-
+const createTable = require("./database/createTable");
 const PORT = process.env.PORT || 3001;
 const app = express();
 
@@ -17,3 +17,5 @@ app.get("*", (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server listening on ${PORT}`);
 });
+
+createTable.createTable();

@@ -30,16 +30,22 @@ function App() {
   //     console.error(err);
   //   }
   // };
-
+  const temp = () => {
+    fetch("/api")
+      .then((response) => response.json())
+      .then((data) => console.log(data));
+  };
   const handleAction = (id) => {
     if (id === 1) {
       signInWithEmailAndPassword(authentication, email, password)
         .then((response) => {
+          console.log(response);
           navigate("/home");
           sessionStorage.setItem(
             "Auth Token",
             response._tokenResponse.refreshToken
           );
+          sessionStorage.setItem("User Email", response.user.email);
         })
         .catch((error) => {
           if (error.code === "auth/wrong-password") {
@@ -57,6 +63,8 @@ function App() {
             "Auth Token",
             response._tokenResponse.refreshToken
           );
+          console.log("temp value is " + temp());
+          sessionStorage.setItem("User Email", response.user.email);
         })
         .catch((error) => {
           if (error.code === "auth/email-already-in-use") {

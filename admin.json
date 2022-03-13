@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "badminton-planner-d27cd",
+  "private_key_id": "55612f6ffcc8f04fcbeca118775adfc3229bf493",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDMo/sfpEWL5w5a\nOmUmq4yldzaiOVktsOU/Z9oGwK/v9woMbMNGdGTmPY4OT+PhqZJBDcq3APFL31Lk\nj1P8f+5Q8PpH6gGbSb4C6aqQX2wNngTVpaRTv8pSeP5ET7IK7rdJ/4q0o99CTpb1\nzJ87da1EJCIZH0pPw7jQuOD10LgiiXi2tBtmzKoVJbUg0JvSyWTZv2wqPpteXj+u\ni4yFhWpEQcp564cGpYtYJ4cUqLlKX4te0CwqQPNkT2C+axIDUlXydT1wtltYJMxp\nRSakxN3CadVDBl7HrYBY1eha7Jdv4v1gmNPrvWiIHs0dcjBMi7qXr4wVOn/zgNNP\nyuTqSy+pAgMBAAECggEAR9r8fqvLz8gd/girI9zw0dj+UhAZBDYtCQqKP/zAyl3Q\nJXS7TK3qD/5lNxlORxqnxDf3ijLGh4GvNZouP2ccY0d6Wm4Mil5mXdd2kKMw6ccm\no246OT4K6NKbVZk2RyhzK4STS8KOzlWSJFTpRJOZd2fIoVGfYkqzRnbkZuwW++jw\nvtXoTAKpgL0z9JSq6kZkKY+AYq0czSp1Wc3Dybxc9l+rIS59ZUcjHkst4FV4HsF1\nNcNaKGrOE0+kPsQULnQeeal/kx17xt+Voi4Dv7AWR11GY033BLVwJk8uEjRy7SV3\nov67dqzaSk+E7ComtGICM1RRojGxfUo62vJ5G0RukQKBgQDnPk46ahEMSpkektCi\nST7twV3AcDGVjsCAvW/+Q/Nuh8VA6wKeTLEwTspCcO4Z1oJZH4ehtU7fSeTNT9cN\nvPMOsJqlAstLyRgCCtKpEaoc8Z3uSyQwES0wuRPshfbfdRPktSxfIvSsE7JnN0Zt\nqjTLgvGYgQoNES+pfR5z7U58AwKBgQDijJIeuteWz8UX78GX61WHhAb2Dz+2WxUy\nR3HSE9L3NiNvQApX4uMhWb9irnXeGqCALDtTXsZPCknrPsh9/qMg1c/QIns/kZfu\nhs+xh6uS8ZjMZW9ZtpXLVS+I69k6HsJn081NV8yB/jcY65DI1fMvGXmuFrX+CtBW\nqhN/1NUT4wKBgQCj6QAeW8yVv9LlXv/P6MdYU/YWT/B1qGg/WQgnXRcSQ97H8005\n0/bM3Sx1CANeATUH41eKgi/UClbKSUuQi1xmDzyutlpP78y6td04xjKkrYdav5x5\nDdPQc3/x6cth/WUKenlnPincR2Hv07hyR3GAx+JkTSNIu+Pi6bNKTO2S7QKBgGTj\n+UbaKpytFrccPPjtAwAA2iDGlbceRQhJLPVDgtY5M/qdaH3POxtlHohR7YfmD8hE\n6n6sXGBi0pyDL0J9HiTHU277jCu5KRI+00vagZxFH6kXG0m2uGr/GtY9QlZR0H3w\noyNokFjr35mnfqkSLuSw0bGnx5DFPBb8UwbAv8vFAoGBAJRFxwYTonP67BNr5Qkf\n8AqJV8ontbVfvuwvE1w4mVhKj1n7OyWf2EY5r6kXGkyltkcutBMM4GC4CMuMP/rI\n1ElwqYc3h7E3R5ur1WlNXUVlbkd4ryhoR7TVcgMIJUu1W0TNbEu1I5z6V81UyMbO\nbI2G9wAFzDfXSWFe8CblFA5N\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-9ktrc@badminton-planner-d27cd.iam.gserviceaccount.com",
+  "client_id": "116456781563162547793",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-9ktrc%40badminton-planner-d27cd.iam.gserviceaccount.com"
+}
