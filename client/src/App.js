@@ -38,7 +38,7 @@ function App() {
 
   const addEmail = (email) => {
     requestOptions.body = JSON.stringify({ email: email });
-    fetch("/addemail", requestOptions)
+    fetch("https://badminton-scheduler.herokuapp.com/addemail", requestOptions)
       .then((response) => response.json())
       .then((data) => console.log(data));
   };
